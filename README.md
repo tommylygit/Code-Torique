@@ -24,7 +24,6 @@ A mathematical study of **Kitaev's toric code** (a topological quantum error-cor
 - [Installation and usage](#installation-and-usage)
 - [Limitations and possible improvements](#limitations-and-possible-improvements)
 - [References](#references)
-- [Authors](#authors)
 
 ---
 
