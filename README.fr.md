@@ -116,7 +116,7 @@ Exécuter les cellules dans l'ordre. Quelques remarques pratiques :
 
 Le modèle simulé n'applique **aucune correction** : le syndrome évolue librement sous le bruit, sans décodeur. Cela a une conséquence importante sur l'interprétation des résultats.
 
-- Chaque plaquette est retournée par ses 4 arêtes voisines, donc son signe se comporte comme une marche aléatoire sur $\{-1, +1\}$. Le syndrome tend vers un état aléatoire et la **densité d'anyons converge vers 1/2**, quelle que soit la valeur de $p$ (observé pour $p$ de $0{,}01$ à $0{,}20$ avec $L = 10$, $20$ et $30$). Plus précisément, $\mathbb{E}[B_p(t)] = B_p(0)\,(1-2p)^{4t}$, donc le temps de relaxation est d'environ $1/(8p)$ pas : il diminue quand $p$ augmente.
+- Chaque plaquette est retournée par ses 4 arêtes voisines, donc son signe se comporte comme une marche aléatoire sur $\{-1, +1\}$. Le syndrome tend vers un état aléatoire et la **densité d'anyons converge vers 1/2**, quelle que soit la valeur de $p$ (observé pour $p$ de $0{,}01$ à $0{,}25$ avec $L = 10$, $20$ et $30$, avec des valeurs entre environ $0{,}49$ et $0{,}52$). Plus précisément, $\mathbb{E}[B_p(t)] = B_p(0)\,(1-2p)^{4t}$, donc le temps de relaxation est d'environ $1/(8p)$ pas : il diminue quand $p$ augmente.
 - La courbe « densité vs $p$ » de la partie 3 est donc quasi plate à la longueur d'équilibration utilisée, et ne fait pas apparaître la transition au voisinage de $p_{\text{seuil}} \approx 0{,}103$. Ce seuil est un résultat théorique et numérique de la littérature (Dennis *et al.*), pas une propriété mesurée ici.
 
 Pour reproduire le seuil, il faudrait simuler le **code capacity model** complet :
