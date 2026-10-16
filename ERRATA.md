@@ -8,7 +8,7 @@ The report (`rapport_final.pdf`) was submitted in **June 2026** and is kept **un
 
 1. **Simulation section.** The report states that the simulation exhibits a phase transition near $p_{\text{threshold}} \approx 0.103$. It does not: the model has no decoder, so the anyon density relaxes to $1/2$ for every $p$, following $\rho(t) = \tfrac{1}{2}[1-(1-2p)^{4t}]$. The threshold is a literature result (Dennis *et al.*, 2002), not measured here. Measuring it would require the full code capacity model with MWPM decoding.
 2. **Proposition 13.1.** The statement gives a gap $\Delta = 2J$ but the proof yields $\Delta = 4J$ (i.e. $2J$ per anyon). The correct gap is $4J$.
-3. **Notebook.** Revised in October 2026 (text aligned with the results, corrupted LaTeX labels fixed, theory curve added, fixed random seed added, English descriptions added alongside the French ones). The simulation functions (`step`, `simulate`, etc.) are unchanged; Git history keeps the original version.
+3. **Notebook.** Revised in October 2026 (text aligned with the results, corrupted LaTeX labels fixed, theory curve added, fixed random seed added, English descriptions added alongside the French ones, figure labels and printed messages translated to English). The simulation functions (`step`, `simulate`, etc.) are unchanged; Git history keeps the original version.
 
 ---
 
@@ -28,7 +28,7 @@ $$\mathbb{E}[B_p(t)] = B_p(0)\,(1-2p)^{4t}.$$
 
 $$\rho(t) = \tfrac{1}{2}\left[1 - (1-2p)^{4t}\right] \xrightarrow[t\to\infty]{} \tfrac{1}{2},$$
 
-quelle que soit la valeur de $p$ (temps de relaxation $\approx 1/(8p)$ pas). La courbe « densité vs $p$ » est donc quasi plate (valeurs entre 0,49 et 0,50 pour $L \in \{10, 20, 30\}$ et $p \in [0{,}01\,;\,0{,}20]$) et **ne fait pas apparaître de transition**.
+quelle que soit la valeur de $p$ (temps de relaxation $\approx 1/(8p)$ pas). La courbe « densité vs $p$ » est donc quasi plate (valeurs comprises entre environ 0,49 et 0,52 pour $L \in \{10, 20, 30\}$ et $p \in [0{,}01\,;\,0{,}25]$, avec des fluctuations de taille finie plus marquées pour $L = 10$) et **ne fait pas apparaître de transition**.
 
 Le seuil $p_{\text{seuil}} \approx 0{,}103$ est un résultat de la littérature (Dennis *et al.*, 2002), **non mesuré** par cette simulation. De même, la simulation n'illustre ni la distance $d = L$ ni la décroissance exponentielle de l'erreur logique (Théorème 12.1). Pour les mesurer, il faudrait simuler le *code capacity model* avec décodage MWPM (Exemple 13.1 du rapport).
 
@@ -42,4 +42,4 @@ Ce que la simulation illustre bien : le retournement de deux plaquettes adjacent
 
 ### 3. Notebook
 
-Le notebook `code_torique_simulation.ipynb` a été révisé en octobre 2026 : les textes qui annonçaient une transition de phase ont été corrigés, des légendes LaTeX corrompues ont été réparées, la courbe théorique $\rho(t)$ a été ajoutée, une graine aléatoire fixe a été introduite et des descriptions en anglais ont été ajoutées à côté des descriptions françaises. Les fonctions de simulation (`step`, `simulate`, etc.) n'ont pas été modifiées. L'historique Git conserve la version d'origine.
+Le notebook `code_torique_simulation.ipynb` a été révisé en octobre 2026 : les textes qui annonçaient une transition de phase ont été corrigés, des légendes LaTeX corrompues ont été réparées, la courbe théorique $\rho(t)$ a été ajoutée, une graine aléatoire fixe a été introduite et des descriptions en anglais ont été ajoutées à côté des descriptions françaises, et les légendes des figures et les messages affichés ont été traduits en anglais. Les fonctions de simulation (`step`, `simulate`, etc.) n'ont pas été modifiées. L'historique Git conserve la version d'origine.
