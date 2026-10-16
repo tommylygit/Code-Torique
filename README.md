@@ -1,4 +1,3 @@
-[README.md](https://github.com/user-attachments/files/33316015/README.md)
 # Kitaev's Toric Code
 
 A mathematical study of **Kitaev's toric code** (a topological quantum error-correcting code) together with a **numerical simulation** of anyon dynamics under a stochastic Pauli channel.
@@ -122,7 +121,7 @@ Run the cells in order. A few practical notes:
 
 The simulated model applies **no correction**: the syndrome evolves freely under noise, without a decoder. This has an important consequence for interpreting the results.
 
-- Each plaquette is flipped by its 4 neighbouring edges, so its sign behaves like a random walk on $\{-1, +1\}$. The syndrome drifts toward a random state and the **anyon density converges to 1/2**, whatever the value of $p$ (observed for $p$ from $0.01$ to $0.20$ with $L = 10$, $20$ and $30$). More precisely, $\mathbb{E}[B_p(t)] = B_p(0)\,(1-2p)^{4t}$, so the relaxation time is about $1/(8p)$ steps: it decreases as $p$ increases.
+- Each plaquette is flipped by its 4 neighbouring edges, so its sign behaves like a random walk on $\{-1, +1\}$. The syndrome drifts toward a random state and the **anyon density converges to 1/2**, whatever the value of $p$ (observed for $p$ from $0.01$ to $0.25$ with $L = 10$, $20$ and $30$, with values between about $0.49$ and $0.52$). More precisely, $\mathbb{E}[B_p(t)] = B_p(0)\,(1-2p)^{4t}$, so the relaxation time is about $1/(8p)$ steps: it decreases as $p$ increases.
 - The "density vs $p$" curve in part 3 is therefore nearly flat at the equilibration length used, and does not show a transition near $p_{\text{threshold}} \approx 0.103$. This threshold is a theoretical and numerical result from the literature (Dennis *et al.*), not a property measured here.
 
 To reproduce the threshold, one would need to simulate the full **code capacity model**:
